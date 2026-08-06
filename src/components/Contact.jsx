@@ -11,19 +11,35 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
+import loc from "../assets/imgs/loc.png"
 function Contact() {
 
   return (
+    <Box
+           sx={{
+                height:"100vh",
+                backgroundImage:`linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${loc})`,
+                backgroundSize:"cover",
+                backgroundPosition:"center",
+                mt:0,
+                display:"flex",
+                alignItems:"center",
+              }}
+           >
+
     <Container
+
+    
      sx={{
  py:10,
  px:{
    xs:2,
    md:10},
         borderRadius:3,
+       
       }}
     >
+          
 
       <Typography
         variant="h3"
@@ -149,8 +165,9 @@ function Contact() {
 
       </Grid>
     </Box>
-
+    
     </Container>
+    </Box>
   );
 }
 

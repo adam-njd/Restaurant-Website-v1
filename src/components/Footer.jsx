@@ -15,7 +15,7 @@ function Footer() {
         backgroundColor:"#023314",
         color:"white",
         py:2,
-        mt:10
+        mt:0
       }}
     >
 
