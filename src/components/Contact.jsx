@@ -24,6 +24,7 @@ function Contact() {
                 mt:0,
                 display:"flex",
                 alignItems:"center",
+                width:{xs:"100%"}
               }}
            >
 
