@@ -1,0 +1,9 @@
+.app{
+    background: linear-gradient(
+    to bottom,
+    #0d4d91,
+    #075b3d);
+    display: flex;
+    flex-direction: column;
+    
+}
