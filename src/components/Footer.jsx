@@ -45,7 +45,7 @@ function Footer() {
 
             <Stack spacing={1} sx={{display:{sm:"none", flexDirection:"row" , gap:{sm:2}, justifyContent:"space-between" , alignItems:"center",}}}>
 
-              <Typography sx={{lineheight:"2.5"}}>
+              <Typography sx={{lineHeight:"2.5"}}>
                 Home
               </Typography>
 
