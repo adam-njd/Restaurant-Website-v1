@@ -9,7 +9,9 @@ Grid
 function About() {
   return (
     <>
-    <Container sx={{
+    <Container
+    id="about"
+    sx={{
  py:10,
  px:{
    xs:2,

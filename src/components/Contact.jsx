@@ -16,6 +16,7 @@ function Contact() {
 
   return (
     <Box
+            id="contact"
            sx={{
                 height:"100vh",
                 backgroundImage:`linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${loc})`,

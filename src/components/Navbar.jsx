@@ -17,11 +17,26 @@ import { useState } from "react";
 export default function Navbar() {
  const [openDrawer, setOpenDrawer] = useState(false);
  const links = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Menu", path: "/menu" },
-  { name: "Contact", path: "/contact" },
-  { name: "Images", path: "/images" },]
+  { name: "Home", id: "hero" },
+  { name: "About", id: "about" },
+  { name: "Menu", id: "meals" },
+  { name: "Contact", id: "contact" },
+  { name: "gallery", id: "gallery" },]
+
+const scrollToSection = (id) => {
+   const section = document.getElementById(id);
+
+   if(section){
+     section.scrollIntoView({
+       behavior:"smooth",
+       block:"start",
+     });
+   }
+
+   setOpenDrawer(false);
+ };
+
+
   return (
     <AppBar position="static" sx={{ background:"linear-gradient(to top,#0d4d91,#075b3d)", mb: 0 , position:"fixed",zIndex: 1000 }}>
       <Toolbar
@@ -61,7 +76,7 @@ export default function Navbar() {
 
         <Box sx={{ display:{ xs: 'none', md: 'flex'}, gap: 9}}   >
           {links.map((link,index) => (
-            <Button key={index} color="inherit" href={link.path}>
+            <Button key={index} color="inherit" onClick={() => scrollToSection(link.id)}>
               {link.name}
             </Button>
           )
@@ -99,7 +114,7 @@ export default function Navbar() {
 
                 <ListItem key={link.name} >
 
-                  <ListItemButton sx={{borderBottom: 1}} href={link.path}>
+                  <ListItemButton sx={{borderBottom: 1}} onClick={() => scrollToSection(link.id)}>
 
                     <ListItemText
                     dir="rtl"

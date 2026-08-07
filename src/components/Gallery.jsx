@@ -25,7 +25,9 @@ const tablet = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
-    <Container  sx={{
+    <Container 
+    id="gallery"
+    sx={{
  py:10,
  px:{
    xs:2,

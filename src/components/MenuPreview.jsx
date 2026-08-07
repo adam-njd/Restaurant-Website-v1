@@ -16,6 +16,7 @@ export default function MenuPreview() {
     
   return (
  <Container
+        id="meals"
       sx={{
         py:10
       }}
