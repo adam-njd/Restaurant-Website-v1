@@ -9,6 +9,19 @@ import {
 import heroImg from '../assets/imgs/bg.png'
 // font import
 
+const scrollToSection = (id) => {
+   const section = document.getElementById(id);
+
+   if(section){
+     section.scrollIntoView({
+       behavior:"smooth",
+       block:"start",
+     });
+   }
+
+   
+ };
+
 function Hero() {
   
   return (
@@ -71,12 +84,14 @@ function Hero() {
             <Button
               variant="contained"
               sx={{backgroundColor:"#023314" }}
+             onClick={() => scrollToSection("meals")}
             >
              Menu
             </Button>
 
 
             <Button
+              onClick={() => scrollToSection("contact")}
               variant="outlined"
               sx={{
                 color:"white",
