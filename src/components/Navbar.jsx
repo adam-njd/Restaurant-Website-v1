@@ -40,7 +40,7 @@ const scrollToSection = (id) => {
   return (
     <AppBar position="static" sx={{ background:"linear-gradient(to top,#0d4d91,#075b3d)", mb: 0 , position:"fixed",zIndex: 1000 }}>
       <Toolbar
-      sx={{minHeight: 80,display:{ xs: 'flex', md: 'flex'}, justifyContent:"space-between", alignItems:"center"}}
+      sx={{minHeight:70,display:{ xs: 'flex', md: 'flex'}, justifyContent:"space-between", alignItems:"center"}}
       >
 
         {/* <Typography
@@ -81,14 +81,15 @@ const scrollToSection = (id) => {
             </Button>
           )
           )}
-          <Button
+          
+
+        </Box>
+        <Button
             variant="contained"
             sx={{backgroundColor:"white", color:"#023314", fontWeight:700, mb: 0  }}
           >
            Book Now
           </Button>
-
-        </Box>
         <IconButton 
         
         color="white"
